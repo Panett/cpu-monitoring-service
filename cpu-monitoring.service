@@ -1,0 +1,8 @@
+[Unit]
+Description=CPU Monitoring Service
+
+[Service]
+ExecStart=/bin/bash /usr/bin/cpu-monitoring
+
+[Install]
+WantedBy=multi-user.target
