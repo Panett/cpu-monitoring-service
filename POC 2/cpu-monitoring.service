@@ -1,0 +1,10 @@
+[Unit]
+Description=CPU Monitoring Service
+Wants=cpu-monitoring.timer
+
+[Service]
+Type=oneshot
+ExecStart=/bin/bash /usr/bin/cpu-monitoring
+
+[Install]
+WantedBy=multi-user.target
