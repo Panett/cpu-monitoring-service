@@ -32,5 +32,5 @@ while true; do
         fi
     fi
     counter=$[$counter+1]
-    sleep 10s
+    sleep 1s
 done
