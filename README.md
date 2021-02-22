@@ -24,6 +24,6 @@ OnCalendar: processes check frequency, check `man systemd.timer`
 You can install/uninstall them by using the utility scripts in their relative folders (it requires root privileges). </br>
 </br>
 Logs: `journalctl -u cpu-monitoring.service` </br>
-Start: `journalctl start cpu-monitoring.service`</br>
-Stop: `journalctl stop cpu-monitoring.service`</br>
-Status: `journalctl status cpu-monitoring.service`
+Start: `systemctl start cpu-monitoring.service`</br>
+Stop: `systemctl stop cpu-monitoring.service`</br>
+Status: `systemctl status cpu-monitoring.service`
