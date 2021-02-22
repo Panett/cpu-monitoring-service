@@ -13,7 +13,6 @@ cp cpu-monitoring.timer /etc/systemd/system/
 systemctl daemon-reload
 systemctl stop cpu-monitoring.service
 systemctl start cpu-monitoring.service
-
-echo -e "Installed successfully\n"
-
 systemctl status cpu-monitoring.service
+
+echo -e "\nInstalled successfully\n"

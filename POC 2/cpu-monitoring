@@ -1,3 +1,3 @@
 #!/bin/bash
 
-ps -eo pid,ppid,%mem,%cpu,args --sort=-%cpu | head -n 2
+ps -eo pid,ppid,%mem,%cpu,comm --sort=-%cpu | head -n 2

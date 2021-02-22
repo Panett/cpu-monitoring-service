@@ -2,7 +2,8 @@
 Description=CPU Monitoring Service
 
 [Service]
-ExecStart=/bin/bash /usr/bin/cpu-monitoring
+EnvironmentFile=/etc/cpu-monitoring/cpu-monitoring.conf
+ExecStart=/bin/bash /usr/bin/cpu-monitoring -t $TIME_TO_SLEEP -l $BLOCK_LINES
 
 [Install]
 WantedBy=multi-user.target
