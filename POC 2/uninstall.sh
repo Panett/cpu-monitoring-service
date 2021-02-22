@@ -9,6 +9,7 @@ systemctl stop cpu-monitoring.service &> /dev/null
 rm -f /usr/bin/cpu-monitoring
 rm -f /etc/systemd/system/cpu-monitoring.service
 rm -f /etc/systemd/system/cpu-monitoring.timer
+rm -rf /etc/systemd/system/cpu-monitoring.timer.d
 systemctl daemon-reload
 
 echo "Uninstalled successfully"
